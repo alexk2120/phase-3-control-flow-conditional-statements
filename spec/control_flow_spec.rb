@@ -7,7 +7,6 @@ describe '#admin_login' do
     expect(admin_login('admin', '12345')).to eq('Access granted')
   end
   
-  it 'returns "Access granted" if the username is "ADMIN" and the password is "12345"' do
     expect(admin_login('ADMIN', '12345')).to eq('Access granted')
   end
   
